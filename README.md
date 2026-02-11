@@ -119,12 +119,11 @@ Where:
 Ratings are predicted using a weighted average of the ratings from the $k$ most similar users:
 
 $$
-\hat{r}_{u,i}
-=
+\hat{r}_{u,i} =
 \frac{
-\sum_{v \in N_k(u)} \mathrm{Sim}(u, v)\, r_{v,i}
+\sum_{v \in N_k(u)} Sim(u, v) \, r_{v,i}
 }{
-\sum_{v \in N_k(u)} \left| \mathrm{Sim}(u, v) \right|
+\sum_{v \in N_k(u)} |Sim(u, v)|
 }
 $$
 
