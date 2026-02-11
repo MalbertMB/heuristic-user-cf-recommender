@@ -102,12 +102,11 @@ python main.py
 The system calculates similarity between two users $u$ and $v$ using a modified Euclidean distance formula that rewards higher overlap in rated items:
 
 $$
-\mathrm{Sim}(u, v)
-=
-\frac{1}{1 + \mathrm{Dist}(u, v)}
-\cdot
-\frac{\lvert I_u \cap I_v \rvert}{\lvert I_{\text{total}} \rvert}
+\mathrm{Sim}(u, v) =
+\frac{1}{1 + \mathrm{Dist}(u, v)} \cdot
+\frac{|I_u \cap I_v|}{|I_{\text{total}}|}
 $$
+
 
 Where:
 
